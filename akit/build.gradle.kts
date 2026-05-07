@@ -22,7 +22,7 @@ repositories {
 wpilibRepositories.use2027Repos()
 wpilibRepositories.addAllReleaseRepositories(project)
 
-val wpilibVersion = "2027.0.0-alpha-2"
+val wpilibVersion = "2027.0.0-alpha-5"
 
 dependencies {
     implementation("edu.wpi.first.cscore:cscore-java:$wpilibVersion")
@@ -46,7 +46,7 @@ tasks.withType<Javadoc> {
     exclude("com/google/flatbuffers/**", "org/littletonrobotics/conduit/**")
     title = "AdvantageKit API"
     options {
-        (this as StandardJavadocDocletOptions).links("https://docs.oracle.com/en/java/javase/21/docs/api/", "https://github.wpilib.org/allwpilib/docs/release/java/")
+        (this as StandardJavadocDocletOptions).links("https://docs.oracle.com/en/java/javase/25/docs/api/", "https://github.wpilib.org/allwpilib/docs/release/java/")
         (this as StandardJavadocDocletOptions).stylesheetFile = file("javadoc.css")
         (this as StandardJavadocDocletOptions).addBooleanOption("Werror", true)
     }
